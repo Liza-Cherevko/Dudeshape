@@ -1,0 +1,151 @@
+
+.header {
+   
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+     }
+     &__logo{
+        align-self: center;
+     }
+
+     nav {
+        overflow: hidden;
+      }
+      
+      &__navbar {
+        padding: 24px 0;
+        display: flex;
+        width: 100%;
+      align-items: center;
+      justify-content: space-between;
+       
+      }
+}
+
+.menu {
+  display: flex;
+ 
+  &__item {
+  margin-left: 60px;
+   &:last-child{
+     color: white;
+   }
+  }
+  &__item-link {
+      color: #161616;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+     
+  }
+
+}
+.burger-menu{
+  align-self: center;
+  display: flex;
+  gap: 20px;
+
+}
+.burger {
+  align-self: center;
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 30px;
+  z-index: 3;
+  cursor: pointer;
+
+  &.active-burger {
+  
+    &:before {
+      background: $white;
+      transform: rotate(45deg);
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+      top: 8px;
+    }
+
+    &:after {
+      background:  $white;
+      transform: rotate(-45deg);
+      bottom: 10px;
+      transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+    }
+
+    & span {
+      transform: scale(0);
+    }
+  }
+
+  &::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background:#244D4D;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background:#244D4D;
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  span {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    width: 100%;
+    background: #244D4D;
+    height: 2px;
+    transform: scale(1);
+    transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) .3s all;
+  }
+}
+
+
+
+  
+
+  // @media (max-width: 767px){
+  
+  //   .menu {
+  //     position: fixed;
+  //     left: 0;
+  //     top: 0;
+  //     height: 100vh;
+  //     width: 100vw;
+  //     display: none;
+  
+  //     &.active {
+  //       display: flex;
+  //       left: 0;
+  //       top: 0;
+  //       height: 100vh;
+  //       width: 100vw;
+  //       flex-direction: column;
+  //       pointer-events: all;
+  //       justify-content: center;
+  //       align-items: center;
+  //       z-index: 2;
+  //       animation: fade .1s linear;
+  //     }
+    
+  //   }
+  
+    
+   
+
+  
+  // }

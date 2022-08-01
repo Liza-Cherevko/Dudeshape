@@ -1,0 +1,141 @@
+// Global SCSS imports
+@import './vars';
+@import './reset';
+@import './global';
+@import './adaptive';
+// Sections SCSS files imports
+@import './header.scss';
+// @import './footer';
+
+.sec-1 {
+    margin-top: 35px;
+    background: url(../img/sec-1.png) ;
+    height: 700px;
+    background-position: right 25% center;
+    background-repeat: no-repeat;
+  
+    &__block {
+        position: absolute;
+        left: 0;
+        top: 270px;
+        background: #154444;
+        width: 620.53px;
+        height: 469.92px;
+        padding: 74px 41px 74px 120px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 68px;
+        color: #FFFFFF;
+    }
+    &__txt {
+        padding-top: 30px;
+        font-family: 'DM Sans';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+
+}
+
+.sec-2{
+ margin-top: 140px;
+    // .block-list__title
+
+    &__title {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        color: #244D4D;
+        text-align: center;
+    }
+
+    // .block-list__wrap
+
+    &__wrap {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    // .block-list__item
+
+    &__item {
+    }
+}
+.sec-3{
+    margin-top: 150px;
+    background-image: url(../img/sec-3-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 10% center;
+    &__about{
+        width: 488px;
+    }
+ 
+    &__about-points{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap:30px ;
+    }
+    &__about-block{
+        display: flex;
+        gap: 23px;
+    }
+    &__about-icons{
+        align-self: flex-start;
+    }
+
+}
+.sec-4{
+  margin-top: 140px;
+}
+
+.slide{
+  &__line{
+    margin-top: 80px;
+  }
+  &__card{
+    background: #FFFFFF;
+    box-shadow: 0px 13px 26px rgba(0, 0, 0, 0.07);
+    width: 380px;
+    height: 382.31px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 24px 27px 24px;
+  }
+  &__price{
+    padding-top: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #154444;
+  }
+  &__links{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  &__links-block{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  &__links-img{
+    padding: 10px;
+    background:#ECF4FF ;
+    border-radius: 50%;
+    &:hover{
+        background: #EF5423;
+    }
+  }
+
+}
