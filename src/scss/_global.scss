@@ -96,8 +96,13 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
-
     color: #244D4D;
+    &--center{
+        text-align: center;
+    }
+    &--color{
+        color: #FFFFFF;
+    }
   }
   .main-txt{
     font-family: 'DM Sans';
@@ -107,6 +112,12 @@ body {
     line-height: 25px;
     color: #383738;
     padding-top: 20px;
+    &--width{
+        width: 819.7px;
+    }
+    &--color{
+        color: #FFFFFF;
+    }
   }
   .second-title{
     font-family: 'DM Sans';
@@ -136,3 +147,12 @@ body {
     background: #244D4D;
     border-radius: 6px;
  }
+.swiper {
+    display: block;
+    width: 380px;
+   height: 382.31px;
+}
+
+input:focus {
+    border: red;
+  }

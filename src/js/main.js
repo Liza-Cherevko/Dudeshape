@@ -34,32 +34,14 @@ function burgerMenu() {
   
 
   
-// var swiper = new Swiper('.mySwiper', {
-//   observer: true,
-//   observeParents: true,
-//   slidesPerView:3,
-//   spaceBetween:60,
-//   slidesPerGroup: 3,
-//   navigation: {
-//         nextEl: ".swiper-next",
-//         prevEl: ".swiper-prev",
-//       },
-       
-//         breakpoints: {
-//           768: {
-//             slidesPerView:3,
-//             spaceBetween:24.8,
-            
-//           },
-//           1000: {
-//             slidesPerView:3,
-//             spaceBetween:30,
-            
-//           },        
-//           1200: {
-//             slidesPerView:3,
-//             spaceBetween:55,
-//           }
-        
-//         }
-// });
+var swiper = new Swiper('.slide__line', {
+  observer: true,
+  observeParents: true,
+  slidesPerView:1,
+  slidesPerGroup: 1,
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+      
+});
